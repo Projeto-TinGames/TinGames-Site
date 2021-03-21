@@ -106,3 +106,9 @@ body {
 .card {
   background-color: #063592;
 }
+
+button {
+  padding:0;
+  border: none;
+  background: none;
+}

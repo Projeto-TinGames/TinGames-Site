@@ -3,9 +3,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity WebGL Player | ABCash</title>
-    <link rel="shortcut icon" href="/client/ABCash/TemplateData/favicon.ico">
-    <link rel="stylesheet" href="/client/ABCash/TemplateData/style.css">
+    <title>ABCash</title>
+    <link rel="shortcut icon" href="./client/ABCash/TemplateData/favicon.ico">
+    <link rel="stylesheet" href="./client/ABCash/TemplateData/style.css">
   </head>
   <body>
     <div id="unity-container" class="unity-desktop">
@@ -23,12 +23,12 @@
       </div>
     </div>
     <script>
-      var buildUrl = "/client/ABCash/Build";
-      var loaderUrl = buildUrl + "/ABCash Web.loader.js";
+      var buildUrl = "./client/ABCash/Build";
+      var loaderUrl = buildUrl + "/ABCash.loader.js";
       var config = {
-        dataUrl: buildUrl + "/ABCash Web.data",
-        frameworkUrl: buildUrl + "/ABCash Web.framework.js",
-        codeUrl: buildUrl + "/ABCash Web.wasm",
+        dataUrl: buildUrl + "/ABCash.data",
+        frameworkUrl: buildUrl + "/ABCash.framework.js",
+        codeUrl: buildUrl + "/ABCash.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "ABCash",
@@ -64,6 +64,13 @@
           alert(message);
         });
       };
+      if (window.confirm('Este jogo necessita que você, eventualmente, baixe um arquivo. Deseja continuar?'))
+      {
+      }
+      else
+      {
+        window.location = "/projetos";
+      }
       document.body.appendChild(script);
     </script>
   </body>
